@@ -7,10 +7,10 @@ If you have Docker installed, you can get the website running in seconds:
 Open your terminal inside the project folder.
 
 Build the image:
-### docker build -t qrcode .
+### docker build -t qr-app-node .
 
 Start the container:
-### docker run -d -p 8080:80 qrcode
+### docker run -p 8080:3000 qr-app-node
 
 # How to Run
 Once it's running, just head over to http://localhost:8080 in your browser.
