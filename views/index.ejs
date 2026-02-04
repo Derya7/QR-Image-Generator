@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <title>QR GENERATOR</title>
+  </head>
+  <body style="background-color: black">
+    <div class="container">
+      <form action="/submit" method="POST">
+        <label class="urlText" style="color: white" for="fname">URL:</label>
+        <br />
+        <br />
+        <input class="urlInput" type="text" id="url" name="url" /><br /><br />
+        <input class="submitButton" type="submit" value="Submit" />
+      </form>
+      <% if (locals.qr) { %>
+        <img src="<%= qr %>" alt="QR Code" />
+      <% } %>
+    </div>
+  </body>
+</html>

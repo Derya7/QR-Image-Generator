@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.urlText {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-family: fantasy;
+}
+.urlInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.submitButton {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#qrImage {
+  width: 400px;
+  height: 400px;
+}
